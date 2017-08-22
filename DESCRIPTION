@@ -1,0 +1,17 @@
+Package: iDINGO
+Type: Package
+Title: Integrative Differential Network Analysis in Genomics
+Version: 1.0.0
+Date: 2017-08-17
+Author: Min Jin Ha <mjha@mdanderson.org>
+Maintainer: Min Jin Ha <mjha@mdanderson.org>
+Imports: mvtnorm, glasso, parallel, GGMridge, visNetwork, scales
+Depends: igraph
+Description: Fits covariate dependent partial correlation matrices for integrative models to identify differential networks between two groups.
+License: GPL-2
+LazyLoad: yes
+Packaged: 2017-08-21 21:25:22 UTC; CAClass
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2017-08-22 17:09:37 UTC

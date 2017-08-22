@@ -1,0 +1,6 @@
+exportPattern("^[[:alpha:]]+")
+import(GGMridge, glasso, mvtnorm, parallel, scales, igraph)
+importFrom("stats", "coef", "cov", "lm", "model.frame", "model.matrix",
+           "model.response", "sd", "var")
+importFrom("visNetwork", "visIgraph", "visGroups", "visOptions",
+           "visInteraction", "visLegend")

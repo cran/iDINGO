@@ -4,7 +4,7 @@
 Fit DINGO model
 }
 \description{
-This function fit DINGO model and calculates edge-wise differential scores for all pairwise edges among p variables. 
+This function fit DINGO model and calculates edge-wise differential scores for all pairwise edges among p variables.
 }
 \usage{
 dingo(dat,x,rhoarray=NULL,diff.score=T,B=100,verbose=T,cores=1)
@@ -22,7 +22,7 @@ dingo(dat,x,rhoarray=NULL,diff.score=T,B=100,verbose=T,cores=1)
   }
   \item{verbose}{if TRUE, lists the procedure
   }
-  \item{cores}{the number of cores to run in parallel for bootstrapping, set to 1 as a default. If more cores are specified than the recommended maximum (the number of cores detected minus 1), this value will be replaced by the recommended value. 
+  \item{cores}{the number of cores to run in parallel for bootstrapping, set to 1 as a default. If more cores are specified than the recommended maximum (the number of cores detected minus 1), this value will be replaced by the recommended value.
   }
 }
 \value{
@@ -51,6 +51,11 @@ dingo(dat,x,rhoarray=NULL,diff.score=T,B=100,verbose=T,cores=1)
     }
 }
 \author{
-    Min Jin HA mjha@mdanderson.org, Caleb CLASS caclass@mdanderson.org	
+    Min Jin HA mjha@mdanderson.org, Caleb CLASS caclass@mdanderson.org
 }
-
+\examples{
+data(gbm)
+# Run DINGO (the first column, 'x', contains the group data).
+# This may take 5-10 minutes.
+\dontrun{fit <- dingo(gbm[,-1], gbm$x, diff.score = TRUE, B = 100, cores = 2)}
+}

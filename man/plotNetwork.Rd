@@ -7,7 +7,7 @@ Plot differential network
 This function plots the differential network from a completed DINGO or iDINGO model.
 }
 \usage{
-plotNetwork(fit, threshold=0.05, thresh.type="p.val", layout="circular", 
+plotNetwork(fit, threshold=0.05, thresh.type="p.val", layout="circular",
             legend.pos="left")
 }
 \arguments{
@@ -32,5 +32,11 @@ To calculate differential scores and p-values for use in network plot thresholdi
 }
 \author{
     Caleb CLASS caclass@mdanderson.org, Min Jin HA mjha@mdanderson.org
+}
+\examples{
+data(brca)
+
+# Plot the iDINGO result using a p-value threshold of 0.01.
+plotNetwork(brca$fit, threshold = 0.01, thresh.type = "p.val")
 }
 

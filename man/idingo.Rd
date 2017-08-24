@@ -51,4 +51,13 @@ idingo(dat,dat2=NULL,dat3=NULL,x,plats=NULL,rhoarray=NULL,
 \author{
     Caleb CLASS caclass@mdanderson.org, Min Jin HA mjha@mdanderson.org
 }
+\examples{
+data(brca)
+
+# Run iDINGO with microRNA, RNA, and protein data.
+# Generally, we recommend a minimum of 100 bootstraps.
+\dontrun{fit <- idingo(brca$mirna, dat2 = brca$rna, dat3 = brca$prot,
+    x = brca$class, plats = c("microRNA", "RNA", "Protein"),
+    diff.score = TRUE, B = 20, cores = 2)}
+}
 

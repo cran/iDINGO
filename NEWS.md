@@ -1,3 +1,7 @@
+### iDINGO 1.0.2
+
+* Bug fix in `plotNetwork`.
+
 ### iDINGO 1.0.1
 
 * Made minor edits to `DESCRIPTION`.

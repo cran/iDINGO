@@ -43,11 +43,14 @@ cylinder.layout <- function(radii, angles, z) {
   cbind(radii*cos(angles)+z, -radii*sin(angles)-z/16)
 }
 
+# For v1.0.2 - $name resassignment can cause an error if 2 elements from
+# different platforms have the same name. Commenting out...
 if (fit.type == "iDINGO") {
   V(network.for.plot)$group <- gsub("\\|\\|.*", "", V(network.for.plot)$name)
-  V(network.for.plot)$name <- gsub(".*\\|\\|", "", V(network.for.plot)$name)
+#  V(network.for.plot)$name <- gsub(".*\\|\\|", "", V(network.for.plot)$name)
   groups <- unique(V(network.for.plot)$group)
 }
+
 
 network.for.plot <- permute(network.for.plot, rank(V(network.for.plot)$name))
 

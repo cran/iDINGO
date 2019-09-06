@@ -1,3 +1,7 @@
+### iDINGO 1.0.3
+
+* Edited citation info.
+
 ### iDINGO 1.0.2
 
 * Bug fix in `plotNetwork`.

@@ -1,3 +1,7 @@
+### iDINGO 1.0.4
+
+* Updated maintainer.
+
 ### iDINGO 1.0.3
 
 * Edited citation info.
